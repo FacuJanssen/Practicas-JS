@@ -5,32 +5,36 @@ let suma = num1 + num2;
 let resta = num1 - num2;
 let div = num1 / num2;
 let mult = num1 + num2;
+let pot = num1 ** num2;
 
-let operacion = "suma";
+let operacion = "resta";
 let resultado;
 
 /* if (operacion === suma) {
     resultado = suma
-} else if (operacion === resta) {
-    resultado = resta
-} else if (operacion === div) {
+  } else if (operacion === resta) {
+  resultado = resta
+  } else if (operacion === div) {
     resultado = div
-} else if (operacion === mult) {
+  } else if (operacion === mult) {
     resultado = mult
 } else { resultado = "Operacion no valida"} */
 
 switch (operacion) {
   case "suma":
-    resultado = num1 + num2;
+    resultado = suma;
     break;
   case "resta":
-    resultado = num1 - num2;
+    resultado = resta;
     break;
   case "div":
-    resultado = num1 / num2;
+    resultado = div;
     break;
   case "mult":
-    resultado = num1 + num2;
+    resultado = mult;
+    break;
+  case "pot":
+    resultado = pot;
     break;
 }
 
