@@ -7,7 +7,24 @@
   </head>
   <body>
     <script>
-      const calculadoraInteractiva = () => {};
+      const calculadoraInteractiva = () => {
+        const num1 = Number(prompt("Introduce el primer número: "));
+        const num2 = Number(prompt("Introduce el segundo número: "));
+        const operacion = prompt("introduce la operacion (+,-,*,/)ñ: ");
+        if (operacion === "+") {
+          return (resultado = num1 + num2);
+        } else if (operacion === "-") {
+          return (resultado = num1 - num2);
+        } else if (operacion === "/") {
+          return (resultado = num1 / num2);
+        } else if (operacion === "*") {
+          return (resultado = num1 * num2);
+        } else {
+          return "Operacion no valida";
+        }
+      };
+
+      alert(calculadoraInteractiva());
     </script>
   </body>
 </html>
